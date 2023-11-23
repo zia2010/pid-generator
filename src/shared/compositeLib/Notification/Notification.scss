@@ -1,0 +1,50 @@
+@use "../../../shared/commonStyles/colors.scss" as colors;
+
+.notification {
+  // position: absolute !important;
+  // top: 0px !important;
+
+  .alertmessage {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .notificationsuccess {
+    background-color: colors.$lightgreen;
+    border: 1px solid colors.$mediumgreen;
+
+    .alertmessage {
+      color: colors.$green;
+    }
+  }
+
+  .notificationerror {
+    background-color: colors.$lightred;
+    border: 1px solid colors.$red1;
+
+    .alertmessage {
+      color: colors.$red1;
+    }
+  }
+
+  .notificationwarning {
+    background-color: colors.$lightyellow;
+    border: 1px solid colors.$mediumyellow;
+
+    .alertmessage {
+      color: colors.$mediumyellow;
+    }
+  }
+
+  .notificationinfo {
+    background-color: colors.$hoverlightblue;
+    border: 1px solid colors.$blue1;
+
+    .alertmessage {
+      color: colors.$blue1;
+    }
+  }
+}

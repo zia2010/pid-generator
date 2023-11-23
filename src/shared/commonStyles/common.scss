@@ -1,0 +1,55 @@
+@use "./colors.scss" as colors;
+
+.fontFamilyPoppins {
+  font-family: "Poppins" !important;
+}
+
+.fontFamilyInter {
+  font-family: "Inter" !important;
+}
+
+.fontWeight-300 {
+  font-weight: 300 !important;
+}
+
+.fontWeight-400 {
+  font-weight: 400 !important;
+}
+
+.fontWeight-500 {
+  font-weight: 500 !important;
+}
+
+.fontWeight-600 {
+  font-weight: 600 !important;
+}
+
+.fontWeight-700 {
+  font-weight: 700 !important;
+}
+
+.validationErrorMessage {
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: colors.$red1;
+  margin-top: 6px;
+  align-items: center;
+  svg {
+    width: auto !important;
+    margin-right: 12px;
+  }
+}
+
+.mainLayout {
+  padding: 0 60px;
+}
+
+.progressbarContentBody {
+  height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+
+.contentBody {
+  height: calc(100vh - 50px);
+  overflow-y: auto;
+}

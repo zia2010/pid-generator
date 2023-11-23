@@ -1,0 +1,158 @@
+@use "../../shared/commonStyles/colors.scss" as colors;
+
+.grafi-header {
+  background-color: colors.$white1 !important;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 15%) !important;
+}
+
+.headerContainer {
+  max-width: 100%;
+  padding: 0 60px !important;
+}
+
+.MuiToolbar-regular {
+  min-height: 50px;
+}
+
+.userWrapper {
+  text-align: right;
+  color: colors.$darkblack;
+}
+
+.userWrapper-row {
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 50px;
+}
+
+.userDownArrow {
+  margin-left: 16px;
+}
+
+.userIcon {
+  max-height: 28px;
+  margin-right: 4px;
+}
+
+.iconImage {
+  width: 100%;
+  max-width: 85px !important;
+  min-width: 85px !important;
+  height: 50px;
+  padding: 0 !important;
+}
+
+.logoContainer {
+  max-width: 85px;
+  button {
+    padding: 0;
+    height: 50px;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
+
+.headerTabWrapper {
+  width: 100%;
+  margin-left: 30px;
+  .MuiTabs-root {
+    min-height: 50px;
+  }
+}
+
+.headerTabs {
+  font-family: "Poppins" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 27px !important;
+  color: colors.$black !important;
+  padding: 11px 24px !important;
+  text-transform: none !important;
+  &.Mui-selected {
+    background: colors.$hoverlightblue;
+    color: colors.$blue1 !important;
+  }
+}
+
+.userButton {
+  text-transform: none !important;
+  font-family: "Inter" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  line-height: 15px !important;
+  color: colors.$black !important;
+  &:hover {
+    background-color: transparent !important;
+  }
+}
+
+.userPopper {
+  transform: translate3d(-44px, 43.3333px, 0px) !important;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.07);
+  .userOption {
+    border-radius: 6px;
+    transform-origin: center top !important;
+  }
+}
+
+#composition-menu {
+  padding: 12px;
+  border: 1px solid colors.$white3;
+  border-radius: 6px;
+  background-color: colors.$white1;
+  li {
+    min-width: 150px;
+    padding: 8px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: colors.$black;
+    &:hover {
+      background: colors.$hoverlightblue;
+    }
+  }
+}
+
+// .appbar_tab{
+//   box-sizing: border-box;
+//   font-family: "Poppins" !important;
+//   font-style: normal !important;
+//   font-weight: 400 !important;
+//   font-size: 18px !important;
+//   line-height: 27px !important;
+//   color: colors.$black !important;
+//   padding: 11px 24px !important;
+//   text-transform: none !important;
+//   background-color: transparent;
+//   cursor: pointer;
+// }
+// .appbar_tab:hover{
+//   background: colors.$hoverlightblue;
+//   color: colors.$blue1 !important;
+// }
+// .appbar_tab.active{
+//   background: colors.$hoverlightblue;
+//   color: colors.$blue1 !important;
+//   // border-bottom: 3px solid #0051BA;
+//   transition: 0.3s;
+// }
+
+.appbarLink {
+  text-decoration: none;
+  color: colors.$black;
+}
+
+li.profile-menu {
+  display: block;
+  text-align: left;
+}
+
+li.profile-menu:hover {
+  background-color: colors.$white1 !important;
+  cursor: default;
+}
