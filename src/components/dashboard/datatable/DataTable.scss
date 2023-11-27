@@ -1,0 +1,11 @@
+@use "../../../shared/commonStyles/colors.scss" as colors;
+
+.dashboardHeader {
+    color: colors.$black;
+    font-family: 'Inter', sans-serif; 
+}
+
+.dashboardCell {
+    color: colors.$black;
+    font-family: 'Inter', sans-serif; 
+}
