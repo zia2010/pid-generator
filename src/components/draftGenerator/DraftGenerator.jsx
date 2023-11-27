@@ -382,11 +382,11 @@ export default function DraftGenerator() {
       })
       .catch(() => {
         dispatch(hideSpinner());
-        dispatch(
-          setErrorNotification({
-            message: "Unable to generate Draft Id",
-          })
-        );
+        // dispatch(
+        //   setErrorNotification({
+        //     message: "Unable to generate Draft Id",
+        //   })
+        // );
       });
   }, []);
   return (
