@@ -5,6 +5,7 @@ import Box from "@mui/material/Box";
 import { DataGrid } from "@mui/x-data-grid";
 import { Link } from "react-router-dom";
 import "./Dashboard.scss";
+import DataTable from "./datatable/DataTable"
 
 export default function Dashboard() {
   return (
@@ -16,12 +17,12 @@ export default function Dashboard() {
       >
         <Grid item container xs={6} className="dashboardLeftContent">
           <Grid item xs={12} className="dashboardLeftHeaderWrapper">
-            {/* <Typography className="dashboardHeader fontFamilyPoppins fontWeight-500">
-                Get Started Here
-              </Typography>
-              <Typography className="dashboardSubHeader fontFamilyInter fontWeight-300">
-                Select the following tool to get started:
-              </Typography> */}
+            <Typography className="dashboardHeader fontFamilyPoppins fontWeight-500">
+              Get Started Here
+            </Typography>
+            <Typography className="dashboardSubHeader fontFamilyInter fontWeight-300">
+              Select the following tool to get started:
+            </Typography>
           </Grid>
           <Grid item container spacing={4} className="alignCenter">
             <Grid item xs={4.6} className="itemBoxes">
@@ -42,41 +43,56 @@ export default function Dashboard() {
                   variant="body1"
                   className="tabSubHeading fontFamilyInter fontWeight-300"
                 >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Fugiat laborum iste similique quasi, possimus quibusdam?
+                  Lorem ipsum, dolor sit amet consectetur possimus.
                 </Typography>
               </Button>
             </Grid>
           </Grid>
-
-          <Box sx={{ mt: "2rem"}}>
-            <Grid item xs={12} className="dashboardLeftHeaderWrapper">
-              <Typography className="dashboardHeader fontFamilyPoppins fontWeight-500">
-                Dashboard
-              </Typography>
-              <Typography className="dashboardSubHeader fontFamilyInter fontWeight-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-                labore!
-              </Typography>
-            </Grid>
-            <DataGrid
-              rows={rows}
-              columns={columns}
-              autoHeight
-              initialState={{
-                pagination: {
-                  paginationModel: {
-                    pageSize: 5,
-                  },
-                },
-              }}
-              pageSizeOptions={[5]}
-              // checkboxSelection
-              disableRowSelectionOnClick
-            />
-          </Box>
         </Grid>
       </Grid>
+      <Grid
+        container
+        alignItems="flex-start"
+        className="dashboardContentWrapper"
+      >
+        <Grid item container xs={10} className="dashboardLeftContent">
+          <Grid item xs={12} className="dashboardLeftHeaderWrapper">
+            <Typography className="dashboardHeader fontFamilyPoppins fontWeight-500">
+              Dashboard
+            </Typography>
+            <Typography className="dashboardSubHeader fontFamilyInter fontWeight-300">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+              labore!
+            </Typography>
+          </Grid>
+          <DataTable />
+          {/* <Grid item container spacing={4} className="alignCenter">
+            <Grid item xs={4.6} className="itemBoxes">
+              <Button
+                variant="outlined"
+                component={Link}
+                to="/draftGenerator"
+                className="itemTabs"
+              >
+                <ModeEditOutlineTwoToneIcon className="tabIcon" />
+                <Typography
+                  variant="h6"
+                  className="tabHeading fontFamilyPoppins fontWeight-500"
+                >
+                  PID Generator
+                </Typography>
+                <Typography
+                  variant="body1"
+                  className="tabSubHeading fontFamilyInter fontWeight-300"
+                >
+                  Lorem ipsum, dolor sit amet consectetur possimus.
+                </Typography>
+              </Button>
+            </Grid>
+          </Grid> */}
+        </Grid>
+      </Grid>
+     
     </>
   );
 }
@@ -125,3 +141,32 @@ const rows = [
   { id: 8, docName: "Frances", summary: "Rossini", age: 36 },
   { id: 9, docName: "Roxie", summary: "Harvey", age: 65 },
 ];
+
+{
+  /* <Box sx={{ mt: "2rem" , bgcolor:'pink'}}>
+            <Grid item xs={12} className="dashboardLeftHeaderWrapper">
+              <Typography className="dashboardHeader fontFamilyPoppins fontWeight-500">
+                Dashboard
+              </Typography>
+              <Typography className="dashboardSubHeader fontFamilyInter fontWeight-300">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                labore!
+              </Typography>
+            </Grid>
+            <DataGrid
+              rows={rows}
+              columns={columns}
+              autoHeight
+              initialState={{
+                pagination: {
+                  paginationModel: {
+                    pageSize: 5,
+                  },
+                },
+              }}
+              pageSizeOptions={[5]}
+              // checkboxSelection
+              disableRowSelectionOnClick
+            />
+          </Box> */
+}
