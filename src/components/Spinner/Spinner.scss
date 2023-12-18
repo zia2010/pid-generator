@@ -1,0 +1,46 @@
+@use "../../shared/commonStyles/colors.scss" as colors;
+
+.overlay-styles {
+  position: fixed;
+  inset: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1500;
+}
+
+.overlay-styles.show {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.overlay-styles.hide {
+  background: transparent;
+}
+
+.overlay-styles.indivisual {
+  position: absolute;
+  background: #ffffff;
+}
+
+.loaderwrap {
+  padding: 18px;
+  border-radius: 5px;
+  .progress {
+    display: flex;
+    min-width: 70px;
+    max-width: 70px;
+  }
+}
+
+.loader {
+  width: 100%;
+}
+
+.styled-span {
+  color: #3f3356;
+  display: inline-flex;
+  align-items: center;
+}
